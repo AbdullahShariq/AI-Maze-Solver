@@ -1,5 +1,3 @@
-
-
 # AI Maze Solver Game
 
 ## Overview
@@ -7,6 +5,8 @@
 The **AI Maze Solver Game** is an interactive Python application built with `tkinter` that challenges players to navigate a maze while collecting keys and power-ups, avoiding obstacles, and reaching a goal. The game features dynamic elements like moving obstacles and offers lifelines such as wall-breaking, obstacle-freezing, and path-revealing capabilities. Additionally, it includes an AI system that can solve the maze using various pathfinding algorithms (BFS, DFS, A*, Greedy Best-First Search) and provides real-time comparison of their performance.
 
 The project is designed for both casual gameplay and educational exploration of pathfinding algorithms, offering a visually engaging interface with a dark theme and detailed statistics tracking.
+
+---
 
 ## Features
 
@@ -28,6 +28,17 @@ The project is designed for both casual gameplay and educational exploration of 
 - **Replay and Reset**: Replay the same maze or generate a new one.
 - **Scoring System**: Earn points for collecting keys and power-ups, with bonuses for quick completion and fewer moves.
 - **Dark Mode UI**: A sleek, modern interface with a dark theme for better visibility.
+
+---
+
+## Algorithm Details
+
+- **BFS (Breadth-First Search)**: Finds the shortest path to keys and the goal, exploring level by level.
+- **DFS (Depth-First Search)**: Explores deeply along each branch, potentially finding longer paths.
+- **A***: Uses Manhattan distance heuristic for efficient shortest-path finding.
+- **Greedy Best-First Search**: Prioritizes moves closer to the target based on heuristic, may not guarantee shortest paths.
+
+---
 
 ## Installation
 
@@ -56,6 +67,8 @@ The project is designed for both casual gameplay and educational exploration of 
    ```bash
    python AI_Maze_Solver.py
    ```
+
+---
 
 ## Usage
 
@@ -101,12 +114,5 @@ The project is designed for both casual gameplay and educational exploration of 
 
 - **Key Files**:
   - `AI_Maze_Solver.py`: The main script containing all game logic and UI code.
-
-## Algorithm Details
-
-- **BFS (Breadth-First Search)**: Finds the shortest path to keys and the goal, exploring level by level.
-- **DFS (Depth-First Search)**: Explores deeply along each branch, potentially finding longer paths.
-- **A***: Uses Manhattan distance heuristic for efficient shortest-path finding.
-- **Greedy Best-First Search**: Prioritizes moves closer to the target based on heuristic, may not guarantee shortest paths.
 
 The AI simulates paths from the current state, collecting keys and reaching the goal, while the comparison table evaluates performance based on moves, score, power-ups collected, and computation time.
